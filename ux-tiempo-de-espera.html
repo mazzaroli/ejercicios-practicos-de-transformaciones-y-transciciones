@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        .nav  {
+            display: flex;
+        }
+        .nav li ul{
+            display: block;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 1s;
+            transition-delay: 0.3s;
+        }
+        .nav a {
+            margin-right: 20px;
+            padding: 10px;
+            background-color: papayawhip;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+    
+        .nav li:hover > ul {
+            opacity: 1;
+            transition: opacity 1s;
+            transition-delay: 0.3s;
+            
+        }
+        .nav li ul li{
+            position: relative;
+            margin-top: 30px;
+
+        }
+        .nav li ul li{
+            right: -80px;
+        }
+
+        .nav li ul li ul li{
+            padding: 10px;
+            background-color: papayawhip;
+            border: 1px solid black;
+            border-radius: 20px;      
+            margin-top: 10px;  
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="/">Mujer</a>
+            <ul class="subnav">
+                <li><a href="/">Camisetas</a></li>
+                <li><a href="/">Pantalonees</a></li>
+                <li><a href="/">Shorts</a>
+                    <ul class="ultrasubnav">
+                        <li>Cortos</li>
+                        <li>Medios</li>
+                        <li>Largos</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="/">Hombre</a></li>
+        <li><a href="/">Ninos</a></li>
+    </ul>
+</body>
+</html>

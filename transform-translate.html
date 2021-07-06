@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shadow {
+            position: relative;
+            margin: 40px;
+            background: lightgray;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        .circle {
+            position: absolute;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(0px,20px);
+        }
+
+        .circle:hover {
+            transform: translateX(20px);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
